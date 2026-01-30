@@ -1,0 +1,53 @@
+---
+import App from "../components/App";
+import "../styles/globals.css";
+
+export function getStaticPaths() {
+	return [
+		{ params: { all: undefined } },
+		{ params: { all: "dashboard" } },
+		{ params: { all: "landing" } },
+		{ params: { all: "dashboard-2" } },
+		{ params: { all: "mail" } },
+		{ params: { all: "tasks" } },
+		{ params: { all: "chat" } },
+		{ params: { all: "calendar" } },
+		{ params: { all: "users" } },
+		{ params: { all: "faqs" } },
+		{ params: { all: "pricing" } },
+		{ params: { all: "settings/user" } },
+		{ params: { all: "settings/account" } },
+		{ params: { all: "settings/billing" } },
+		{ params: { all: "settings/appearance" } },
+		{ params: { all: "settings/notifications" } },
+		{ params: { all: "settings/connections" } },
+		{ params: { all: "auth/sign-in" } },
+		{ params: { all: "auth/sign-in-2" } },
+		{ params: { all: "auth/sign-in-3" } },
+		{ params: { all: "auth/sign-up" } },
+		{ params: { all: "auth/sign-up-2" } },
+		{ params: { all: "auth/sign-up-3" } },
+		{ params: { all: "auth/forgot-password" } },
+		{ params: { all: "auth/forgot-password-2" } },
+		{ params: { all: "auth/forgot-password-3" } },
+		{ params: { all: "errors/unauthorized" } },
+		{ params: { all: "errors/forbidden" } },
+		{ params: { all: "errors/not-found" } },
+		{ params: { all: "errors/internal-server-error" } },
+		{ params: { all: "errors/under-maintenance" } },
+	];
+}
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<App client:only="react" />
+	</body>
+</html>
