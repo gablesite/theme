@@ -55,9 +55,11 @@ export function UserNav() {
           <DropdownMenuItem className="cursor-pointer">New Team</DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="cursor-pointer">
-          Log out
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+        <DropdownMenuItem asChild className="cursor-pointer">
+          <a href="/auth/sign-in">
+            Log out
+            <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          </a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -14,9 +14,8 @@ type FaqItem = {
 const faqItems: FaqItem[] = [
   {
     value: 'item-1',
-    question: 'How do I integrate ShadcnStore components into my project?',
-    answer:
-      'Integration is simple! All our components are built with shadcn/ui and work with React, Next.js, and Vite. Just copy the component code, install any required dependencies, and paste it into your project. Each component comes with detailed installation instructions and examples.',
+    question: "What is GableSite?",
+    answer: "GableSite is a comprehensive collection of pre-built components, templates, and admin dashboards designed to speed up your development workflow.",
   },
   {
     value: 'item-2',

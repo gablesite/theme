@@ -22,16 +22,16 @@ export function UpgradeToProButton() {
             className="px-6 py-3 bg-gradient-to-br shadow-lg from-slate-900 cursor-pointer to-slate-400 text-white font-bold"
             style={{ minWidth: 180 }} onClick={() => window.open(SHADCN_BLOCKS_URL, "_blank")}
           >
-            Upgrade to Pro
+            Upgrade to GableSite Pro
             <Rocket size={30} className="ml-1" />
           </Button>
         </HoverCardTrigger>
         <HoverCardContent className="mb-3 w-90 rounded-xl shadow-2xl bg-background border border-border p-3 animate-in fade-in slide-in-from-bottom-4 relative mr-4 md:mr-6 lg:mr-8">
           <div className="flex flex-col items-center text-center gap-3">
             <a href={SHADCN_BLOCKS_URL} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                            <img 
+              <img
                 src={assetUrl("hero-images-container.png")}
-                alt="Dashboard Preview" 
+                alt="Dashboard Preview"
                 className="rounded-lg border shadow-lg"
                 width={400}
                 height={300}
@@ -39,7 +39,7 @@ export function UpgradeToProButton() {
             </a>
             <h3 className="font-bold text-lg flex items-center py-2 gap-2">
               <Rocket size={18} className="text-primary" />
-              Unlock Premium Blocks 
+              Unlock Premium Blocks
               <Badge variant="destructive" className="text-xs px-2 py-0.5 rounded-full shadow">Live</Badge>
             </h3>
             <p className="text-muted-foreground text-sm mb-4">

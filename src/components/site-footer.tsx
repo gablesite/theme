@@ -11,12 +11,10 @@ export function SiteFooter() {
             <Heart className="h-4 w-4 fill-red-500 text-red-500" />
             <span>by</span>
             <Link
-              to="https://shadcnstore.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              to="/"
               className="font-medium text-foreground hover:text-primary transition-colors"
             >
-              ShadcnStore Team
+              GableSite Team
             </Link>
           </div>
           <p className="text-xs text-muted-foreground">

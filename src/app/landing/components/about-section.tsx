@@ -36,14 +36,14 @@ export function AboutSection() {
         {/* Section Header */}
         <div className="mx-auto max-w-4xl text-center mb-16">
           <Badge variant="outline" className="mb-4">
-            About ShadcnStore
+            About GableSite
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
             Built for developers, by developers
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            We're passionate about creating the best marketplace for shadcn/ui components and templates.
-            Our mission is to accelerate development and help developers build beautiful admin interfaces faster.
+            At GableSite, we believe that great software shouldn't require reinventing the wheel.
+            Our mission is to provide high-quality, accessible components that help developers ship faster.
           </p>
         </div>
 

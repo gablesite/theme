@@ -8,10 +8,16 @@ export default function LoginPage() {
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="/" className="flex items-center gap-2 font-medium">
             <div className="bg-primary text-primary-foreground flex size-8 items-center justify-center rounded-md">
-              <Logo size={24} />
+              <Logo className="h-6 w-6" />
             </div>
-            ShadcnStore
+            <span className="text-lg font-bold">GableSite</span>
           </a>
+        </div>
+        <div className="my-auto space-y-6 text-center text-primary-foreground">
+          <h1 className="text-3xl font-bold">Welcome back!</h1>
+          <p className="text-lg">
+            Enter your credentials to access your GableSite account.
+          </p>
         </div>
         <div className="flex flex-1 items-center justify-center">
           <div className="w-full max-w-md">

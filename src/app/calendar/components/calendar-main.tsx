@@ -172,7 +172,7 @@ export function CalendarMain({ selectedDate, onDateSelect, onMenuClick, events, 
 
   const renderListView = () => {
     const upcomingEvents = sampleEvents
-      .filter(event => event.date >= new Date())
+      .filter(event => isSameMonth(event.date, currentDate))
       .sort((a, b) => a.date.getTime() - b.date.getTime())
 
     return (

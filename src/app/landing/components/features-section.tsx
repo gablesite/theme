@@ -68,11 +68,8 @@ export function FeaturesSection() {
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
           <Badge variant="outline" className="mb-4">Marketplace Features</Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-            Everything you need to build amazing web applications
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Our marketplace provides curated blocks, templates, landing pages, and admin dashboards to help you build professional applications faster than ever.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            Everything you need to build modern applications. GableSite provides a complete toolkit for developers.
           </p>
         </div>
 

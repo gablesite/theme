@@ -64,7 +64,7 @@ export function ContactSection() {
             Need help or have questions?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our team is here to help you get the most out of ShadcnStore. Choose the best way to reach out to us.
+            Have a question about GableSite? We're here to help. Send us a message and we'll reply as soon as possible.
           </p>
         </div>
 
