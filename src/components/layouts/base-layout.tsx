@@ -5,7 +5,7 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
-import { UpgradeToProButton } from "@/components/upgrade-to-pro-button"
+
 import { useSidebarConfig } from "@/hooks/use-sidebar-config"
 import {
   SidebarInset,
@@ -95,7 +95,7 @@ export function BaseLayout({ children, title, description }: BaseLayoutProps) {
 
       {/* Theme Customizer */}
 
-      <UpgradeToProButton />
+
     </SidebarProvider>
   )
 }
