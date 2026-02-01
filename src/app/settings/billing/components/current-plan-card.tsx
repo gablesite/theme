@@ -43,16 +43,16 @@ export function CurrentPlanCard({ plan }: CurrentPlanCardProps) {
         </div>
 
         {plan.needsAttention && (
-          <Card className="border-neutral-200 bg-neutral-50 dark:border-neutral-600 dark:bg-neutral-800">
+          <Card className="border-border bg-muted/50">
             <CardContent>
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-neutral-600 mt-0.5 dark:text-neutral-400" />
+                <AlertTriangle className="h-5 w-5 text-yellow-500 mt-0.5" />
                 <div className="space-y-1">
-                  <p className="font-medium text-neutral-800 dark:text-neutral-400">We need your attention!</p>
-                  <p className="text-sm text-neutral-700 dark:text-neutral-400">{plan.attentionMessage}</p>
+                  <p className="font-medium text-foreground">We need your attention!</p>
+                  <p className="text-sm text-muted-foreground">{plan.attentionMessage}</p>
                 </div>
               </div>
-              
+
               {/* Progress Section */}
               <div className="mt-4 space-y-2">
                 <div className="flex justify-between items-center">

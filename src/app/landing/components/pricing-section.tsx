@@ -83,17 +83,17 @@ export function PricingSection() {
               type="single"
               value={isYearly ? "yearly" : "monthly"}
               onValueChange={(value) => setIsYearly(value === "yearly")}
-              className="bg-secondary text-secondary-foreground border-none rounded-full p-1 cursor-pointer shadow-none"
+              className="bg-muted text-muted-foreground border-none rounded-full p-1 cursor-pointer shadow-none"
             >
               <ToggleGroupItem
                 value="monthly"
-                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 !rounded-full data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
+                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 rounded-full! data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
               >
                 Monthly
               </ToggleGroupItem>
               <ToggleGroupItem
                 value="yearly"
-                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 !rounded-full data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
+                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 rounded-full! data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
               >
                 Annually
               </ToggleGroupItem>
@@ -112,11 +112,10 @@ export function PricingSection() {
               {plans.map((plan, index) => (
                 <div
                   key={index}
-                  className={`p-8 grid grid-rows-subgrid row-span-4 gap-6 ${
-                    plan.popular
-                      ? 'my-2 mx-4 rounded-xl bg-card border-transparent shadow-xl ring-1 ring-foreground/10 backdrop-blur'
-                      : ''
-                  }`}
+                  className={`p-8 grid grid-rows-subgrid row-span-4 gap-6 ${plan.popular
+                    ? 'my-2 mx-4 rounded-xl bg-card border-transparent shadow-xl ring-1 ring-foreground/10 backdrop-blur'
+                    : ''
+                    }`}
                 >
                   {/* Plan Header */}
                   <div>
@@ -143,11 +142,10 @@ export function PricingSection() {
                   {/* CTA Button */}
                   <div>
                     <Button
-                      className={`w-full cursor-pointer my-2 ${
-                        plan.popular
-                          ? 'shadow-md border-[0.5px] border-white/25 shadow-black/20 bg-primary ring-1 ring-primary/15 text-primary-foreground hover:bg-primary/90'
-                          : 'shadow-sm shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 hover:bg-muted/50'
-                      }`}
+                      className={`w-full cursor-pointer my-2 ${plan.popular
+                        ? 'shadow-md border-[0.5px] border-white/25 shadow-black/20 bg-primary ring-1 ring-primary/15 text-primary-foreground hover:bg-primary/90'
+                        : 'shadow-sm shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 hover:bg-muted/50'
+                        }`}
                       variant={plan.popular ? 'default' : 'secondary'}
                     >
                       {plan.cta}
@@ -164,7 +162,7 @@ export function PricingSection() {
                       )}
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center gap-3">
-                          <Check className="text-muted-foreground size-4 flex-shrink-0" strokeWidth={2.5} />
+                          <Check className="text-muted-foreground size-4 shrink-0" strokeWidth={2.5} />
                           <span>{feature}</span>
                         </li>
                       ))}
