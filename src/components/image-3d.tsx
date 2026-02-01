@@ -26,7 +26,11 @@ export function Image3D({
         <div className="absolute sm:-inset-8 rounded-3xl bg-gradient-to-r from-primary/10 via-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-all duration-1000 blur-2xl" />
 
         {/* Main 3D container */}
-        <div className="relative size-full transform-3d group-hover:rotate-x-8 group-hover:rotate-y-12 group-hover:translate-z-16 transition-all duration-700 ease-out">
+        <div className={cn(
+          "relative size-full transform-3d transition-all duration-700 ease-out",
+          isRight ? "group-hover:-rotate-y-12 group-hover:rotate-x-8" : "group-hover:rotate-y-12 group-hover:rotate-x-8",
+          "group-hover:translate-z-16"
+        )}>
 
           {/* Depth layers for 3D effect */}
           <div className="absolute inset-0 translate-y-4 translate-x-2 -translate-z-8 rounded-2xl">
