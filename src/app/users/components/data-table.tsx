@@ -94,32 +94,32 @@ export function DataTable({ users, onDeleteUser, onEditUser, onAddUser }: DataTa
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Active":
-        return "text-green-600 bg-green-50 dark:text-green-400 dark:bg-green-900/20"
+        return "text-green-900 bg-green-50 border-green-200 dark:text-green-400 dark:bg-green-900/20 dark:border-transparent"
       case "Pending":
-        return "text-orange-600 bg-orange-50 dark:text-orange-400 dark:bg-orange-900/20"
+        return "text-orange-900 bg-orange-50 border-orange-200 dark:text-orange-400 dark:bg-orange-900/20 dark:border-transparent"
       case "Error":
-        return "text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20"
+        return "text-red-900 bg-red-50 border-red-200 dark:text-red-400 dark:bg-red-900/20 dark:border-transparent"
       case "Inactive":
-        return "text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-gray-900/20"
+        return "text-gray-900 bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-900/20 dark:border-transparent"
       default:
-        return "text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-gray-900/20"
+        return "text-gray-900 bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-900/20 dark:border-transparent"
     }
   }
 
   const getRoleColor = (role: string) => {
     switch (role) {
       case "Admin":
-        return "text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20"
+        return "text-red-900 bg-red-50 border-red-200 dark:text-red-400 dark:bg-red-900/20 dark:border-transparent"
       case "Editor":
-        return "text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/20"
+        return "text-blue-900 bg-blue-50 border-blue-200 dark:text-blue-400 dark:bg-blue-900/20 dark:border-transparent"
       case "Author":
-        return "text-yellow-600 bg-yellow-50 dark:text-yellow-400 dark:bg-yellow-900/20"
+        return "text-yellow-900 bg-yellow-50 border-yellow-200 dark:text-yellow-400 dark:bg-yellow-900/20 dark:border-transparent"
       case "Maintainer":
-        return "text-green-600 bg-green-50 dark:text-green-400 dark:bg-green-900/20"
+        return "text-green-900 bg-green-50 border-green-200 dark:text-green-400 dark:bg-green-900/20 dark:border-transparent"
       case "Subscriber":
-        return "text-purple-600 bg-purple-50 dark:text-purple-400 dark:bg-purple-900/20"
+        return "text-purple-900 bg-purple-50 border-purple-200 dark:text-purple-400 dark:bg-purple-900/20 dark:border-transparent"
       default:
-        return "text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-gray-900/20"
+        return "text-gray-900 bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-900/20 dark:border-transparent"
     }
   }
 
@@ -181,7 +181,7 @@ export function DataTable({ users, onDeleteUser, onEditUser, onAddUser }: DataTa
       cell: ({ row }) => {
         const role = row.getValue("role") as string
         return (
-          <Badge variant="secondary" className={getRoleColor(role)}>
+          <Badge variant="outline" className={getRoleColor(role)}>
             {role}
           </Badge>
         )
@@ -211,7 +211,7 @@ export function DataTable({ users, onDeleteUser, onEditUser, onAddUser }: DataTa
       cell: ({ row }) => {
         const status = row.getValue("status") as string
         return (
-          <Badge variant="secondary" className={getStatusColor(status)}>
+          <Badge variant="outline" className={getStatusColor(status)}>
             {status}
           </Badge>
         )
@@ -432,9 +432,9 @@ export function DataTable({ users, onDeleteUser, onEditUser, onAddUser }: DataTa
                       {header.isPlaceholder
                         ? null
                         : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
                     </TableHead>
                   )
                 })}

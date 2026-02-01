@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@variant dark (&:where(.dark, .dark *));
 /* Using Shadcn UI v4 compatible theme setup */
 
 @theme {
