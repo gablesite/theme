@@ -36,15 +36,10 @@ export function SiteHeader() {
             <SearchTrigger onClick={() => setSearchOpen(true)} />
           </div>
           <div className="ml-auto flex items-center gap-2">
-            <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
-              <a
-                href="https://shadcnstore.com/blocks"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="dark:text-foreground"
-              >
+            <Button variant="ghost" size="sm" className="hidden sm:flex cursor-default">
+              <span className="dark:text-foreground">
                 Blocks
-              </a>
+              </span>
             </Button>
             <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
               <a
@@ -56,16 +51,7 @@ export function SiteHeader() {
                 Landing Page
               </a>
             </Button>
-            <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
-              <a
-                href="https://github.com/silicondeck/shadcn-dashboard-landing-template"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="dark:text-foreground"
-              >
-                GitHub
-              </a>
-            </Button>
+
             <ModeToggle />
           </div>
         </div>

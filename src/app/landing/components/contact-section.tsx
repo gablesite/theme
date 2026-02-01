@@ -82,10 +82,8 @@ export function ContactSection() {
                 <p className="text-muted-foreground mb-3">
                   Join our active community for quick help and discussions with other developers.
                 </p>
-                <Button variant="outline" size="sm" className="cursor-pointer" asChild>
-                  <a href="https://discord.com/invite/XEQhPc9a6p" target="_blank" rel="noopener noreferrer">
-                    Join Discord
-                  </a>
+                <Button variant="outline" size="sm" className="cursor-default">
+                  Join Discord
                 </Button>
               </CardContent>
             </Card>
@@ -102,7 +100,7 @@ export function ContactSection() {
                   Report bugs, request features, or contribute to our open source repository.
                 </p>
                 <Button variant="outline" size="sm" className="cursor-pointer" asChild>
-                  <a href="https://github.com/silicondeck/shadcn-dashboard-landing-template/issues" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/gablesite/theme/issues" target="_blank" rel="noopener noreferrer">
                     View on GitHub
                   </a>
                 </Button>

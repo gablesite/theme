@@ -127,7 +127,7 @@ export function LandingNavbar() {
         <div className="hidden xl:flex items-center space-x-2">
           <ModeToggle variant="ghost" />
           <Button variant="ghost" size="icon" asChild className="cursor-pointer">
-            <a href="https://github.com/silicondeck/shadcn-dashboard-landing-template" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+            <a href="https://github.com/gablesite/theme" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
               <Github className="h-5 w-5" />
             </a>
           </Button>
@@ -173,7 +173,7 @@ export function LandingNavbar() {
                       <Sun className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     </Button>
                     <Button variant="ghost" size="icon" asChild className="cursor-pointer h-8 w-8">
-                      <a href="https://github.com/silicondeck/shadcn-dashboard-landing-template" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                      <a href="https://github.com/gablesite/theme" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
                         <Github className="h-4 w-4" />
                       </a>
                     </Button>

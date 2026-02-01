@@ -51,7 +51,7 @@ const footerLinks = {
 
 const socialLinks = [
   { name: 'Twitter', href: '#', icon: Twitter },
-  { name: 'GitHub', href: 'https://github.com/silicondeck/shadcn-dashboard-landing-template', icon: Github },
+  { name: 'GitHub', href: 'https://github.com/gablesite/theme', icon: Github },
   { name: 'LinkedIn', href: '#', icon: Linkedin },
   { name: 'YouTube', href: '#', icon: Youtube },
 ]

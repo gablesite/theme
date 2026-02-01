@@ -19,8 +19,8 @@ export function UpgradeToProButton() {
         <HoverCardTrigger asChild>
           <Button
             size="lg"
-            className="px-6 py-3 bg-gradient-to-br shadow-lg from-slate-900 cursor-pointer to-slate-400 text-white font-bold"
-            style={{ minWidth: 180 }} onClick={() => window.open(SHADCN_BLOCKS_URL, "_blank")}
+            className="px-6 py-3 bg-gradient-to-br shadow-lg from-slate-900 cursor-default to-slate-400 text-white font-bold"
+            style={{ minWidth: 180 }}
           >
             Upgrade to GableSite Pro
             <Rocket size={30} className="ml-1" />
@@ -28,7 +28,7 @@ export function UpgradeToProButton() {
         </HoverCardTrigger>
         <HoverCardContent className="mb-3 w-90 rounded-xl shadow-2xl bg-background border border-border p-3 animate-in fade-in slide-in-from-bottom-4 relative mr-4 md:mr-6 lg:mr-8">
           <div className="flex flex-col items-center text-center gap-3">
-            <a href={SHADCN_BLOCKS_URL} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <div className="">
               <img
                 src={assetUrl("hero-images-container.png")}
                 alt="Dashboard Preview"
@@ -36,7 +36,7 @@ export function UpgradeToProButton() {
                 width={400}
                 height={300}
               />
-            </a>
+            </div>
             <h3 className="font-bold text-lg flex items-center py-2 gap-2">
               <Rocket size={18} className="text-primary" />
               Unlock Premium Blocks
@@ -47,13 +47,11 @@ export function UpgradeToProButton() {
             </p>
             <div className="flex flex-row gap-2 w-full mt-2 justify-center">
               <div className="relative w-1/2">
-                <a href={SHADCN_BLOCKS_URL} target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full flex items-center justify-center cursor-pointer" variant="default">
-                    <Blocks size={16} />
-                    Pro Blocks
-                    <ArrowRight size={16} />
-                  </Button>
-                </a>
+                <Button className="w-full flex items-center justify-center cursor-default" variant="default">
+                  <Blocks size={16} />
+                  Pro Blocks
+                  <ArrowRight size={16} />
+                </Button>
               </div>
               <div className="relative w-1/2">
                 <Button className="w-full flex items-center justify-center" variant="default" disabled>
